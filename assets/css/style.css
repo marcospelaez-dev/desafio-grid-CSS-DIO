@@ -29,8 +29,8 @@
     margin: 0 auto;
     display: grid;
     grid-template-areas:
-    "header header header header header"
-    "aside main main main main";
+    "header header header header header header header"
+    "aside main main main main main main";
 }
 
 /* container geral spaces congig */
@@ -43,14 +43,13 @@ header {
 
 main {
     height: 200px;
-    background-color: palegreen;
+    background-color: #f7f7f7;
     grid-area: main;
 }
 
 aside {
-    height: 200px;
-    background-color: aqua;
     grid-area: aside;
+    padding-bottom: 20px;
 }
 
 /* header */
@@ -66,7 +65,7 @@ aside {
     border: 1px solid #CCCCCC;
 }
 .bts-search img {
-    padding: 8px;
+    padding: 5px 12px;
     border: 1px solid #CCCCCC;
 }
 
@@ -79,3 +78,15 @@ aside {
 }
 
 .menu-logo, .bts-direita { padding-top: 8px; }
+
+/* aside - sidebar */
+
+.sidebar div {
+    display: grid;
+    grid-template-columns: .1fr .5fr;
+    margin-top: 25px;
+}
+.sidebar-txt {
+    font-size: 14px;
+    padding-top: 4px;
+}
