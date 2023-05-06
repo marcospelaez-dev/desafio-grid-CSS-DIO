@@ -33,18 +33,49 @@
     "aside main main main main";
 }
 
+/* container geral spaces congig */
 header {
-    height: 50px;
-    background-color: paleturquoise;
     grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 6px 0;
 }
+
 main {
     height: 200px;
     background-color: palegreen;
     grid-area: main;
 }
+
 aside {
     height: 200px;
     background-color: aqua;
     grid-area: aside;
 }
+
+/* header */
+
+.menu-logo img { margin-right: 30px; }
+
+.bts-search{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.bts-search input {
+    grid-column-start: 2;
+    border: 1px solid #CCCCCC;
+}
+.bts-search img {
+    padding: 8px;
+    border: 1px solid #CCCCCC;
+}
+
+.bts-direita{
+    text-align: right;
+}
+.bt-direita {
+    width: 24px; height: 24px;
+    margin-right: 10px;
+}
+
+.menu-logo, .bts-direita { padding-top: 8px; }
