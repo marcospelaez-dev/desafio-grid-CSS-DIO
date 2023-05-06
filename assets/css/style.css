@@ -27,4 +27,24 @@
 .geral-container {
     max-width: 1440px;
     margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+    "header header header header header"
+    "aside main main main main";
+}
+
+header {
+    height: 50px;
+    background-color: paleturquoise;
+    grid-area: header;
+}
+main {
+    height: 200px;
+    background-color: palegreen;
+    grid-area: main;
+}
+aside {
+    height: 200px;
+    background-color: aqua;
+    grid-area: aside;
 }
