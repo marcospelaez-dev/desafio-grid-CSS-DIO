@@ -1,0 +1,30 @@
+/*
+* Desafio Grid Layout CSS da DIO - Formação CSS
+* Marcos Antonio Pelaez de Sousa - Web Designer
+* Início: 06/05/2023
+*/
+
+/* import font Roboto */
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+/* reset css */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+    font-size: 16px;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+/* geral container */
+
+.geral-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
